@@ -1,4 +1,4 @@
-package com.xprt;
+package org.hundred.xprt;
 
 import com.facebook.react.ReactActivity;
 

@@ -10,4 +10,8 @@ Please check the Pepperoni repo for setup instructions.
 
 ### Project specific
 
-You need to set the `apiRoot` variable in `src/utils/rest.js` so it points to your backend.
+You need to set the `apiRoot` variable in `src/utils/rest.js` so it points to your backend
+and 'oauth2Url' variable in 'src/modules/login/Login.js'.
+
+Prod:
+__DEV__ to false

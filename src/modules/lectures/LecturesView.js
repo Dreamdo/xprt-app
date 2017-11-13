@@ -34,7 +34,7 @@ export default class LecturesView extends Component {
 
   componentDidMount() {
     this.props.getLectures();
-  }
+  };
 
   open = (routeName, lectureId) => {
     const { navigate } = this.props;
@@ -60,12 +60,31 @@ export default class LecturesView extends Component {
     </ListItem>
   );
 
+  renderPlaceholder = (lectures) => {
+    if (lectures.length == 0) {
+      return (
+        <Container>
+          <View style={ styles.placeholderBody }>
+            <Text style={styles.placeholderHeader}> Welcome to XPRT! </Text>
+            <Text style={styles.placeholderText}> 
+                  Arranging a visiting lecture from a professional expert has become easier.
+                  {'\n'}
+                  {'\n'}
+                  Click the green button to create your first lecture and invite an expert!
+            </Text> 
+          </View>
+        </Container>
+      );
+    };
+  };
+
   render() {
     const { lectures, loading, getLectures } = this.props;
 
     return (
       <Container>
         <View style={{ flex: 1 }}>
+          {this.renderPlaceholder(lectures)}
           <List
             refreshControl={
               <RefreshControl
@@ -75,6 +94,7 @@ export default class LecturesView extends Component {
             }
             dataArray={lectures}
             renderRow={this.renderRow}
+
           />
         </View>
         <Fab

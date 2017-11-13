@@ -36,6 +36,22 @@ const styles = {
   xprtGreen: {
     backgroundColor: variables.brandGreen,
   },
+  placeholderBody: {    
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: 200,
+  },
+  placeholderText: {
+    margin: 30,
+    alignItems: 'center',
+  },
+  placeholderHeader: {
+    color: '#15a369',
+    fontSize: 20,
+    paddingTop: 10,
+    paddingBottom: 10,
+  },
 };
 
 module.exports = styles;

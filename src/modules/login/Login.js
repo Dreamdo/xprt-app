@@ -10,7 +10,7 @@ import { bindActionCreators } from 'redux';
 
 import Cookie from 'react-native-cookie';
 
-const oauth2Url = 'https://xprt-backend.herokuapp.com/oauth2/callback';
+const oauth2Url = 'https://xprt-backend-hundred.herokuapp.com/oauth2/callback';
 
 // Action creators
 export const storeToken = createAction('Store login token');
