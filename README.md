@@ -15,3 +15,7 @@ and 'oauth2Url' variable in 'src/modules/login/Login.js'.
 
 Prod:
 __DEV__ to false
+
+
+BLUE BOT ISSUE
+https://github.com/GeekyAnts/NativeBase/issues/677
