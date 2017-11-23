@@ -96,6 +96,7 @@ const styles = {
     borderRadius: 12,
     height: 28,
     margin: 3,
+    justifyContent: 'center',
   },
   subjectText: {
     fontSize: 14,

@@ -4,11 +4,11 @@ import adapterFetch from 'redux-api/lib/adapters/fetch';
 // import config from 'config';
 
 const config = {
-  apiRoot: 'https://xprt-backend-hundred.herokuapp.com',
+  apiRoot: 'http://localhost:3888',
 };
 
 if (__DEV__) {
-  //config.apiRoot = 'http://localhost:3888';
+  config.apiRoot = 'http://localhost:3888';
 }
 
 // import { showError } from '../modules/ErrorSnackbar';

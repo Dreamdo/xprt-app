@@ -18,6 +18,7 @@ const styles = {
     borderRadius: 12,
     height: 20,
     margin: 3,
+    justifyContent: 'center',
   },
   subjectText: {
     fontSize: 10,

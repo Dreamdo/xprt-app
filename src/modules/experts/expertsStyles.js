@@ -27,10 +27,10 @@ const styles = {
     borderColor: 'gold',
     borderRadius: 12,
     height: 20,
-    margin: 2,
+    margin: 3,
+    justifyContent: 'center',
   },
   subjectText: {
-    marginTop: -7,
     fontSize: 10,
     color: 'black',
     backgroundColor: 'rgba(255,255,255,0)',
